@@ -1,3 +1,9 @@
 <div>
-  <p> Hello from expanse-creator </p>
+  <h1>Create expense</h1>
+  <div class="ec-form">
+    <label> Date: <input type="date" id="date" onchange={{action setDate}}> </label>
+    <label> Amount: <input type="number" id="amount" onkeyup={{action setAmount}}> </label>
+    <label> Title: <input id="title" onkeyup={{action setTitle}}> </label>
+    <button name="button" onclick={{action create}}>Create</button>
+  </div>
 </div>
