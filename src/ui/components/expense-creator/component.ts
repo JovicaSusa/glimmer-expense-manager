@@ -11,7 +11,7 @@ export default class ExpanseCreator extends Component {
       amount: this.amount,
       title: this.title
     };
-    console.log(expense);
+    this.args.add(expense);
   };
 
   setDate(event) {

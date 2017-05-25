@@ -4,8 +4,8 @@
   {{/each}}
 </div>
 <div>
-  <expense-creator />
+  <expense-creator @add={{action addExpense}} />
 </div>
 <div>
-  <expense-table />
+  <expense-table @expenses={{expenses}} />
 </div>
