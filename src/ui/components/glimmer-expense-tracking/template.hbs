@@ -1,7 +1,7 @@
 <div>
-  <info-box />
-  <info-box />
-  <info-box />
+  {{#each infoBoxTitles key="@index" as |title|}}
+    <info-box @title={{title}} @amount={{amount}} />
+  {{/each}}
 </div>
 <div>
   <expense-creator />
