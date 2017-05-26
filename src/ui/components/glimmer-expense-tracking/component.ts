@@ -9,4 +9,9 @@ export default class GlimmerExpenseTracking extends Component {
     this.expenses.add(expense);
     this.expenses = this.expenses;
   };
+
+  deleteExpense(expense) {
+    this.expenses.delete(expense);
+    this.expenses = this.expenses;
+  };
 }
